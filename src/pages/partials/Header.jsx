@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import routes, { CONTACT_ROUTE } from "../../contants/routes"
 import { useEffect, useState } from "react"
 import { LETS_TALK_ICON, MOON_ICON, SUN_ICON } from "../../contants/images";
@@ -8,6 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
     const [isShowingNav, setIsShowingNav] = useState(false)
+    const location = useLocation()
     useEffect(() => {
         const isDarkMode = localStorage.getItem('darkMode') === 'true';
         document.body.classList.toggle('dark-theme', isDarkMode);
@@ -28,7 +29,7 @@ function Header() {
                             <ul className="navbar-info me-auto">
                                 {routes.map((route, index) => (
                                     <li key={index} className="nav-item">
-                                        <Link className="nav-link" to={route.path}>
+                                        <Link className={`nav-link ${location.pathname === route.path ? "active" : ""}`} to={route.path}>
                                             {route.icon}
                                             <span>{route.title}</span>
                                         </Link>

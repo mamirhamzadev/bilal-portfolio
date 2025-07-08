@@ -1077,7 +1077,7 @@ p {
 	border: 1px solid var(--border);
 	text-align: center;
 	line-height: 36px;
-	font-size: 13px;
+	font-size: 10px;
 	color: var(--light-black);
 	cursor: pointer;
 	position: absolute;

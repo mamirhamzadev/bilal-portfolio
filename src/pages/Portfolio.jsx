@@ -33,8 +33,8 @@ function Portfolio() {
                                                             <p className="subtitle">{project.subTitle}</p>
                                                         </div>
                                                         <div className="visite-btn">
-                                                            <a target="_blank" href={project.project_url} style={{ minWidth: "70px" }}>Visit Site
-                                                                <FontAwesomeIcon icon={faArrowRight} style={{ rotate: "-45deg" }} />
+                                                            <a target="_blank" href={project.project_url} style={{ minWidth: "70px" }}>Visit Site&nbsp;&nbsp;
+                                                                <FontAwesomeIcon fontSize={12} icon={faArrowRight} style={{ rotate: "-45deg" }} />
                                                             </a>
                                                         </div>
                                                     </div>

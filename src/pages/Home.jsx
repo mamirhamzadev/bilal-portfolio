@@ -9,11 +9,13 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas, faStar } from "@fortawesome/free-solid-svg-icons"
 import { faClone } from "@fortawesome/free-regular-svg-icons";
 import { faArrowLeft, faArrowRight, faDownload, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 library.add(fab, fas)
 
 function Home() {
     const HomePageData = initializeHomePageData()
+    const [copyEmailBtnText, setCopyEmailBtnText] = useState("Copy Email");
     return (
         <section className="home-area">
             <div className="container">
@@ -31,9 +33,15 @@ function Home() {
                                             <FontAwesomeIcon icon={faPhoneVolume} className="icon" fontSize={20} />
                                             Book A call
                                         </button>
-                                        <button className="btn btn-copy" onClick={() => navigator.clipboard.writeText(HomePageData.email)}>
+                                        <button className="btn btn-copy" onClick={() => {
+                                            navigator.clipboard.writeText(HomePageData.email).then(() => {
+                                                setCopyEmailBtnText("Copied"); setTimeout(() => {
+                                                    setCopyEmailBtnText("Copy Email")
+                                                }, 1000);
+                                            })
+                                        }}>
                                             <FontAwesomeIcon icon={faClone} fontSize={20} className="icon" />
-                                            Copy Email
+                                            {copyEmailBtnText}
                                         </button>
                                     </div>
                                     <div className="social-media-icon">
@@ -41,13 +49,13 @@ function Home() {
                                             <li className="w-100">
                                                 <Link to={HomePageData.github} target="_blank" className="d-block w-100 cursor-pointer btn-copy">
                                                     <FontAwesomeIcon icon={['fab', 'github']} />
-                                                    Github Link
+                                                    &nbsp;Github Link
                                                 </Link>
                                             </li>
                                             <li className="w-100 mt-2">
                                                 <Link download to={HomePageData.resume} target="_blank" className="d-block w-100">
                                                     <FontAwesomeIcon icon={faDownload} />
-                                                    Download Resume
+                                                    &nbsp;Download Resume
                                                 </Link>
                                             </li>
                                         </ul>
@@ -193,8 +201,12 @@ function Home() {
                                                                 slidesPerView: 1
                                                             }
                                                         }}>
-                                                        <FontAwesomeIcon icon={faArrowLeft} className="left icon" id=" feedback-back-btn" />
-                                                        <FontAwesomeIcon icon={faArrowRight} className="right icon" id=" feedback-forward-btn" />
+                                                        <div className="icon left d-flex align-items-center justify-content-center" id="feedback-back-btn">
+                                                            <FontAwesomeIcon icon={faArrowLeft} fontSize={14} />
+                                                        </div>
+                                                        <div className="icon right d-flex align-items-center justify-content-center" id="feedback-forward-btn">
+                                                            <FontAwesomeIcon icon={faArrowRight} fontSize={14} />
+                                                        </div>
                                                         {HomePageData.client_testimonials.map((testimonial, index) => (
                                                             <SwiperSlide key={index}>
                                                                 <div className="col-lg-12">
@@ -202,7 +214,7 @@ function Home() {
                                                                         <div className="feedback-top-info">
                                                                             <div className="rating">
                                                                                 {Array.from({ length: 5 }).map((_, index) => (
-                                                                                    <FontAwesomeIcon icon={index + 1 <= testimonial.ratings ? ["fas", "star"] : faStar} />
+                                                                                    <FontAwesomeIcon key={index} icon={["fas", "star"]} className="me-1" />
                                                                                 ))}
                                                                             </div>
                                                                         </div>
@@ -235,14 +247,14 @@ function Home() {
                                             <div className="scrolling-info">
                                                 <div className="slider-item">
                                                     <p>
-                                                        Let’s Build Something Great 💻 Available for Hire 🚀 Building Web, CMS &amp; AI Apps 🤖 Let’s Create Something Powerful 🚀 Full-Stack Developer 💻
+                                                        Let’s Build Something Great 💻 Available for Hire 🚀 Building Web, CMS & AI Apps 🤖 Let’s Create Something Powerful 🚀 Full-Stack Developer 💻
                                                     </p>
                                                 </div>
                                             </div>
                                             <h3 className="card-title">Let's👋
                                                 <span className="d-block">Work Together</span>
                                             </h3>
-                                            <Link className="link-btn mb-3" to={CONTACT_ROUTE}> Let's Talk
+                                            <Link className="link-btn mb-3" to={CONTACT_ROUTE}> Let's Talk&nbsp;
                                                 <svg className="icon" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.5 11.6665V6.6665H12.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                     <path d="M17.5 6.6665L10 14.1665L2.5 6.6665" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

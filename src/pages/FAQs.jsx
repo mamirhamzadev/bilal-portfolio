@@ -16,8 +16,8 @@ function FAQs() {
                                         <div className="accordion" id="accordionExample">
                                             {FAQs_DATA.map((faq, index) => (
                                                 <div key={index} className="accordion-item">
-                                                    <h4 className="accordion-header" id={`heading${index}`}>
-                                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="true" aria-controls={`collapse${index}`}>
+                                                    <h4 className="accordion-header" id={`heading${index + 1}`}>
+                                                        <button className={`accordion-button ${!index?"":"collapsed"}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index + 1}`} aria-expanded="true" aria-controls={`collapse${index + 1}`}>
                                                             {faq.title}
                                                             <span className="ms-auto">
                                                                 <span className="icon ms-4">
@@ -27,7 +27,7 @@ function FAQs() {
                                                             </span>
                                                         </button>
                                                     </h4>
-                                                    <div id={`collapse${index}`} className="accordion-collapse collapse show" aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
+                                                    <div id={`collapse${index + 1}`} className={`accordion-collapse collapse ${index ? "" : "show"}`} aria-labelledby={`heading${index + 1}`} data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">{faq.description}</div>
                                                     </div>
                                                 </div>

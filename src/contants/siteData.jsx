@@ -116,7 +116,7 @@ export const initializeHomePageData = () => ({
             image: BRANDING_ICON
         },
         {
-            title: "AI Chatbots &amp; Automation Agents",
+            title: "AI Chatbots & Automation Agents",
             image: AI_CHATBOT_ICON
         },
         {
@@ -174,7 +174,7 @@ export const PORTFOLIO_PROJECTS = [
         image: PROJECT_3_IMAGE,
         path: PROJECT_3_IMAGE,
         title: "BookingBee",
-        subTitle: "AI-Powered Scheduling &amp; Booking Assistant",
+        subTitle: "AI-Powered Scheduling & Booking Assistant",
         project_url: "https://bookingbee.ai/",
         description: "Developed an AI-powered booking assistant that automates appointment scheduling across industries. Integrated calendar APIs, real-time availability detection, and GPT-powered chat for natural conversation flow. Built responsive UI and backend with robust timezone, cancellation, and rescheduling logic. Reduced manual booking tasks and improved user experience."
     },
@@ -223,7 +223,7 @@ export const PORTFOLIO_PROJECTS = [
 export const FAQs_DATA = [
     {
         title: "What services do you offer?",
-        description: <p>I specialize in Full Stack Web &amp; Mobile App Development, AI/Chatbot creation (GPT, NLP, LangChain), UI/UX prototyping, API development, CMS integrations, and automation tools.</p>
+        description: <p>I specialize in Full Stack Web & Mobile App Development, AI/Chatbot creation (GPT, NLP, LangChain), UI/UX prototyping, API development, CMS integrations, and automation tools.</p>
     },
     {
         title: "Do you work with startups or only large companies?",
