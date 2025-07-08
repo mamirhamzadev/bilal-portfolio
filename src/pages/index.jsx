@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Header from "./partials/header"
+import Header from "./partials/Header"
 import AppBackground from "./templates/AppBackground"
 import { CONTACT_ROUTE, FAQS_ROUTE, HOME_ROUTE, PORTFOLIO_ROUTE } from "../contants/routes"
 import Home from "./Home"
