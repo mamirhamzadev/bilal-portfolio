@@ -396,7 +396,7 @@ p {
 	margin-left: 8px;
 }
 
-.header-area .mobile-menu-control-bar .mobile-menu-control-bar {
+.header-area .mobile-menu-control-bar {
 	background-color: transparent;
 	border: 0;
 	font-size: 22px;
@@ -2498,7 +2498,7 @@ p {
 	background-color: #000;
 }
 
-.dark-theme .header-area .mobile-menu-control-bar .mobile-menu-control-bar {
+.dark-theme .header-area .mobile-menu-control-bar button {
 	color: var(--dark-theme-light-white);
 }
 

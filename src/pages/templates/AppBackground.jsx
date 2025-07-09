@@ -8,7 +8,6 @@ function AppBackground() {
             const objects3D = document.querySelectorAll(".move-with-cursor")
             var t = event.clientX,
                 e = event.clientY;
-            console.log({ t, e })
             objects3D.forEach((elem) => {
                 elem.style.transition = "transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
                 elem.style.transform = `translate(${.01 * t}px, ${.01 * e}px) rotate(${.01 * (t + e)}deg)`;

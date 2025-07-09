@@ -14,6 +14,10 @@ function Header() {
         document.body.classList.toggle('dark-theme', isDarkMode);
     }, [])
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "instant" })
+    }, [location])
+
     const changeTheme = () => {
         document.body.classList.toggle('dark-theme');
         const isDark = document.body.classList.contains('dark-theme');
@@ -29,7 +33,7 @@ function Header() {
                             <ul className="navbar-info me-auto">
                                 {routes.map((route, index) => (
                                     <li key={index} className="nav-item me-1">
-                                        <Link className={`nav-link`} to={route.path}>
+                                        <Link onClick={() => setIsShowingNav(false)} className={`nav-link ${location.pathname === route.path ? "active" : ""}`} to={route.path}>
                                             {route.icon}
                                             <span>{route.title}</span>
                                         </Link>
@@ -47,7 +51,7 @@ function Header() {
                                         <small className="theme-text d-block d-xl-none">Change appearance</small>
                                     </span>
                                 </button>
-                                <Link to={CONTACT_ROUTE} className="lets-talk-btn">
+                                <Link onClick={() => setIsShowingNav(false)} to={CONTACT_ROUTE} className="lets-talk-btn">
                                     Let's Talk
                                     <img src={LETS_TALK_ICON} alt="" className="icon" />
                                 </Link>
