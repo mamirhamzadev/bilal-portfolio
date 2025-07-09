@@ -85,8 +85,8 @@ function Contact() {
                                                     </div>
                                                     <div className="col-12">
                                                         <div className="mb-4 form-check">
-                                                            <input type="checkbox" name="consent" required className="form-check-input cursor-pointer shadow-none" id="consentCheck" />
-                                                            <label className="form-check-label cursor-pointer" htmlFor="consentCheck">
+                                                            <input type="checkbox" name="consent" style={{ cursor: "pointer" }} required className="form-check-input shadow-none" id="consentCheck" />
+                                                            <label className="form-label" style={{ cursor: "pointer" }} htmlFor="consentCheck">
                                                                 I consent to having this website store my submitted information so Muhammad Bilal can respond to my inquiry.
                                                             </label>
                                                         </div>

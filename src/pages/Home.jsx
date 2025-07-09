@@ -23,23 +23,23 @@ function Home() {
                     <div className="col-xl-4">
                         <div className="card profile-card">
                             <div className="card-body">
-                                <div className="text">
-                                    <p><span className="h4">👋 Hi, I’m {HomePageData.name}</span> </p>
+                                <div className="text mt-0">
+                                    <p className="m-0"><span className="h4">👋 Hi, I’m {HomePageData.name}</span> </p>
                                     {HomePageData.description}
-                                    <div className="common-button-groups">
-                                        <Link target="_blank" className="btn btn-call me-2" to="https://calendly.com/bilal16/30min">
-                                            <FontAwesomeIcon icon={faPhoneVolume} className="icon" fontSize={18} />
-                                            &nbsp;&nbsp;Book A call
+                                    <div className="common-button-groups d-flex gap-2">
+                                        <Link target="_blank" className="btn btn-call d-flex align-items-center justify-content-center gap-2 w-100" to="https://calendly.com/bilal16/30min">
+                                            <FontAwesomeIcon icon={faPhoneVolume} fontSize={18} />
+                                            Book A call
                                         </Link>
-                                        <button className="ms-1 btn btn-copy" onClick={() => {
+                                        <button className="btn btn-copy d-flex gap-2 align-items-center justify-content-center w-100 m-0" onClick={() => {
                                             navigator.clipboard.writeText(HomePageData.email).then(() => {
                                                 setCopyEmailBtnText("Copied"); setTimeout(() => {
                                                     setCopyEmailBtnText("Copy Email")
                                                 }, 1000);
                                             })
                                         }}>
-                                            <FontAwesomeIcon icon={faClone} fontSize={20} className="icon" />
-                                            &nbsp;{copyEmailBtnText}
+                                            <FontAwesomeIcon icon={faClone} fontSize={20} />
+                                            {copyEmailBtnText}
                                         </button>
                                     </div>
                                     <div className="social-media-icon">
@@ -71,8 +71,8 @@ function Home() {
                                         <div className="work-experiance-main">
                                             <ul className="work-experiance-slider list-unstyled">
                                                 {HomePageData.why_work_with_me.map((item, index) => (
-                                                    <li key={index}>
-                                                        <div className="info px-2 py-4 rounded" style={{ backgroundColor: '#F0F2F5' }}>
+                                                    <li key={index} className="w-100">
+                                                        <div className="info px-2 py-4 rounded w-100" style={{ backgroundColor: '#F0F2F5' }}>
                                                             <div className="text">
                                                                 <h4 className="title">{item.title}</h4>
                                                                 <h6 className="subtitle">{item.subTitle}</h6>
@@ -95,8 +95,8 @@ function Home() {
                                                 {HomePageData.highlights.map((highlight, index) => (
                                                     <div key={index} className="col-xl-4 col-md-4 col-sm-6 col-6">
                                                         <div className="expertise-item">
-                                                            <div className="image text-center">
-                                                                <h4 className="title">{highlight.data}</h4>
+                                                            <div className="text image text-center">
+                                                                <h4 className="title m-0" style={{fontSize:"24px"}}>{highlight.data}</h4>
                                                             </div>
                                                             <div className="text">
                                                                 <h4 className="title">{highlight.title}</h4>
@@ -151,7 +151,7 @@ function Home() {
                                         <div className="row g-4">
                                             {HomePageData.services.map((service, index) => (
                                                 <div key={index} className="col-md-4 col-sm-6 col-6">
-                                                    <div className="services-item text-center">
+                                                    <div className="services-item text-center h-100">
                                                         <div className="image">
                                                             <img src={service.image} alt="ui-ux" />
                                                         </div>
