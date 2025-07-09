@@ -27,13 +27,11 @@ function Home() {
                                     <p><span className="h4">👋 Hi, I’m {HomePageData.name}</span> </p>
                                     {HomePageData.description}
                                     <div className="common-button-groups">
-                                        <button className="btn btn-call" onClick={() => {
-                                            Calendly.initPopupWidget({ url: 'https://calendly.com/bilal16/30min' });
-                                        }}>
-                                            <FontAwesomeIcon icon={faPhoneVolume} className="icon" fontSize={20} />
-                                            Book A call
-                                        </button>
-                                        <button className="btn btn-copy" onClick={() => {
+                                        <Link target="_blank" className="btn btn-call me-2" to="https://calendly.com/bilal16/30min">
+                                            <FontAwesomeIcon icon={faPhoneVolume} className="icon" fontSize={18} />
+                                            &nbsp;&nbsp;Book A call
+                                        </Link>
+                                        <button className="ms-1 btn btn-copy" onClick={() => {
                                             navigator.clipboard.writeText(HomePageData.email).then(() => {
                                                 setCopyEmailBtnText("Copied"); setTimeout(() => {
                                                     setCopyEmailBtnText("Copy Email")
@@ -41,7 +39,7 @@ function Home() {
                                             })
                                         }}>
                                             <FontAwesomeIcon icon={faClone} fontSize={20} className="icon" />
-                                            {copyEmailBtnText}
+                                            &nbsp;{copyEmailBtnText}
                                         </button>
                                     </div>
                                     <div className="social-media-icon">
@@ -119,7 +117,7 @@ function Home() {
                                 <h3 className="card-title">
                                     Recent Projects
                                     <Link className="link-btn" to={PORTFOLIO_ROUTE}>
-                                        All Projects
+                                        All Projects&nbsp;
                                         <FontAwesomeIcon icon={faArrowRight} className="icon" />
                                     </Link>
                                 </h3>
@@ -188,7 +186,7 @@ function Home() {
                                                 </h3>
                                                 <div className="row client-feedback-slider">
                                                     <Swiper
-                                                        slidesPerView={2}
+                                                        slidesPerView={1}
                                                         autoplay={{ delay: 2000 }}
                                                         speed={300}
                                                         loop
@@ -196,10 +194,6 @@ function Home() {
                                                         navigation={{
                                                             prevEl: "#feedback-back-btn",
                                                             nextEl: "#feedback-forward-btn"
-                                                        }} breakpoints={{
-                                                            768: {
-                                                                slidesPerView: 1
-                                                            }
                                                         }}>
                                                         <div className="icon left d-flex align-items-center justify-content-center" id="feedback-back-btn">
                                                             <FontAwesomeIcon icon={faArrowLeft} fontSize={14} />

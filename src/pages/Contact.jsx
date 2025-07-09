@@ -93,7 +93,7 @@ function Contact() {
                                                     </div>
                                                     <div className="col-md-12">
                                                         <button className="submit-btn" type="submit">
-                                                            Send Message
+                                                            Send Message&nbsp;&nbsp;
                                                             <img src={LETS_TALK_ICON} alt="lets talk" />
                                                         </button>
                                                     </div>

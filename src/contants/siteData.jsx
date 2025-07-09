@@ -1,4 +1,4 @@
-import { AI_CHATBOT_ICON, AI_POWERED_WEB_ICON, APP_ICON, BRANDING_ICON, MY_PORTFOLIO_AI_EARKICK_IMAGE, MY_PORTFOLIO_AI_LAWYER_IMAGE, MY_PORTFOLIO_EDUAIDE_IMAGE, MY_PORTFOLIO_IMAGE, MY_PORTFOLIO_VENTURE_KIT_IMAGE, MY_PORTFOLIO_WUNDER_FLATS_IMAGE, PROJECT_3_IMAGE, PROJECT_4_IMAGE, PROJECT_6_IMAGE, WEB_DEVELOPMENT_ICON, YOUTUBE_ICON } from "./images";
+import { AI_CHATBOT_ICON, AI_POWERED_WEB_ICON, APP_ICON, BRANDING_ICON, MY_PORTFOLIO_AI_EARKICK_IMAGE, MY_PORTFOLIO_AI_LAWYER_IMAGE, MY_PORTFOLIO_BLOODGPT_IMAGE, MY_PORTFOLIO_EDUAIDE_IMAGE, MY_PORTFOLIO_IMAGE, MY_PORTFOLIO_VENTURE_KIT_IMAGE, MY_PORTFOLIO_WUNDER_FLATS_IMAGE, PROJECT_3_IMAGE, PROJECT_4_IMAGE, PROJECT_6_IMAGE, WEB_DEVELOPMENT_ICON, YOUTUBE_ICON } from "./images";
 import { PORTFOLIO_ROUTE } from "./routes";
 
 export const initializeHomePageData = () => ({
@@ -163,8 +163,8 @@ export const PORTFOLIO_PROJECTS = [
         description: "Contributed to HiPeople’s intelligent hiring platform by integrating AI-driven candidate assessments, automated reference checks, and personalized insights. Helped build scalable backend systems and deploy NLP models that evaluate candidate fit, soft skills, and team compatibility. Resulted in reduced hiring time and improved decision accuracy for recruiters."
     },
     {
-        image: MY_PORTFOLIO_IMAGE,
-        path: MY_PORTFOLIO_IMAGE,
+        image: MY_PORTFOLIO_BLOODGPT_IMAGE,
+        path: MY_PORTFOLIO_BLOODGPT_IMAGE,
         title: "BloodGPT",
         subTitle: "AI-Powered Blood Test Insights",
         project_url: "https://bloodgpt.com/",

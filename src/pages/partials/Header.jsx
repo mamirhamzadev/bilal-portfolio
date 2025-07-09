@@ -28,8 +28,8 @@ function Header() {
                         <div className={`navbar-main d-flex flex-grow-1 ${isShowingNav ? "show" : ""}`}>
                             <ul className="navbar-info me-auto">
                                 {routes.map((route, index) => (
-                                    <li key={index} className="nav-item">
-                                        <Link className={`nav-link ${location.pathname === route.path ? "active" : ""}`} to={route.path}>
+                                    <li key={index} className="nav-item me-1">
+                                        <Link className={`nav-link`} to={route.path}>
                                             {route.icon}
                                             <span>{route.title}</span>
                                         </Link>
@@ -55,8 +55,8 @@ function Header() {
                         </div>
                         <div onClick={() => setIsShowingNav(false)} className={`mobile-menu-overlay d-block d-xl-none ${isShowingNav ? "show" : ""}`} />
                         <div className="mobile-menu-control-bar d-block d-xl-none">
-                            <button className="btn" onClick={() => setIsShowingNav(true)}>
-                                <FontAwesomeIcon icon={faBars} />
+                            <button className="btn p-0" onClick={() => setIsShowingNav(true)}>
+                                <FontAwesomeIcon icon={faBars} fontSize={25} />
                             </button>
                         </div>
                     </div>
