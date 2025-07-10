@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CONTACT_ROUTE, PORTFOLIO_ROUTE } from "../contants/routes";
-import { initializeHomePageData } from "../contants/siteData";
+import { initializeHomePageData, PORTFOLIO_PROJECTS } from "../contants/siteData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -96,7 +96,7 @@ function Home() {
                                                     <div key={index} className="col-xl-4 col-md-4 col-sm-6 col-6">
                                                         <div className="expertise-item">
                                                             <div className="text image text-center">
-                                                                <h4 className="title m-0" style={{fontSize:"24px"}}>{highlight.data}</h4>
+                                                                <h4 className="title m-0" style={{ fontSize: "24px" }}>{highlight.data}</h4>
                                                             </div>
                                                             <div className="text">
                                                                 <h4 className="title">{highlight.title}</h4>
@@ -123,11 +123,11 @@ function Home() {
                                 </h3>
                                 <div className="projects-main mt-24">
                                     <div className="row g-4 parent-container">
-                                        {HomePageData.projects.map((project, index) => (
+                                        {PORTFOLIO_PROJECTS.slice(0, 3).map((project, index) => (
                                             <div key={index} className="col-lg-12">
                                                 <div className="project-item">
-                                                    <Link to={project.path} className="card border border-2 rounded">
-                                                        <img src={project.image} alt="project-2" className="img-fluid w-100" />
+                                                    <Link to={PORTFOLIO_ROUTE + "/" + project.slug} className="card border border-2 rounded">
+                                                        <img src={project.image[0]} alt="project-2" className="img-fluid w-100" />
                                                     </Link>
                                                 </div>
                                             </div>

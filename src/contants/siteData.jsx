@@ -1,5 +1,4 @@
 import { AI_CHATBOT_ICON, AI_POWERED_WEB_ICON, APP_ICON, BRANDING_ICON, MY_PORTFOLIO_AI_EARKICK_IMAGE, MY_PORTFOLIO_AI_LAWYER_IMAGE, MY_PORTFOLIO_BLOODGPT_IMAGE, MY_PORTFOLIO_EDUAIDE_IMAGE, MY_PORTFOLIO_IMAGE, MY_PORTFOLIO_VENTURE_KIT_IMAGE, MY_PORTFOLIO_WUNDER_FLATS_IMAGE, PROJECT_3_IMAGE, PROJECT_4_IMAGE, PROJECT_6_IMAGE, WEB_DEVELOPMENT_ICON, YOUTUBE_ICON } from "./images";
-import { PORTFOLIO_ROUTE } from "./routes";
 
 export const initializeHomePageData = () => ({
     name: "Muhammad Bilal",
@@ -84,20 +83,6 @@ export const initializeHomePageData = () => ({
             data: "45+"
         },
     ],
-    projects: [
-        {
-            image: PROJECT_4_IMAGE,
-            path: PORTFOLIO_ROUTE
-        },
-        {
-            image: PROJECT_6_IMAGE,
-            path: PORTFOLIO_ROUTE
-        },
-        {
-            image: PROJECT_3_IMAGE,
-            path: PORTFOLIO_ROUTE
-        }
-    ],
     services: [
         {
             title: "Web Application Development",
@@ -152,70 +137,541 @@ export const initializeHomePageData = () => ({
     ]
 })
 
-
 export const PORTFOLIO_PROJECTS = [
     {
-        image: MY_PORTFOLIO_IMAGE,
-        path: MY_PORTFOLIO_IMAGE,
+        image: [MY_PORTFOLIO_IMAGE, MY_PORTFOLIO_IMAGE],
         title: "HiPeople",
+        slug: "hi-people",
+        services: "Product Design, and Development",
         subTitle: "AI-Powered Hiring Intelligence",
         project_url: "http://hipeople.io/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Contributed to HiPeople’s intelligent hiring platform by integrating AI-driven candidate assessments, automated reference checks, and personalized insights. Helped build scalable backend systems and deploy NLP models that evaluate candidate fit, soft skills, and team compatibility. Resulted in reduced hiring time and improved decision accuracy for recruiters."
     },
     {
-        image: MY_PORTFOLIO_BLOODGPT_IMAGE,
-        path: MY_PORTFOLIO_BLOODGPT_IMAGE,
+        image: [MY_PORTFOLIO_BLOODGPT_IMAGE, MY_PORTFOLIO_BLOODGPT_IMAGE],
         title: "BloodGPT",
+        slug: "blood-gpt",
+        services: "Product Design, and Development",
         subTitle: "AI-Powered Blood Test Insights",
         project_url: "https://bloodgpt.com/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Built an AI platform that helps users understand blood test results in simple language. Integrated GPT-based models and medical databases to provide explanations, potential causes, and recommended next steps. Designed a secure, privacy-compliant web app that delivers accurate, accessible health insights. Reduced patient confusion and improved healthcare literacy."
     },
     {
-        image: PROJECT_3_IMAGE,
-        path: PROJECT_3_IMAGE,
+        image: [PROJECT_3_IMAGE, PROJECT_3_IMAGE],
         title: "BookingBee",
+        slug: "booking-bee",
+        services: "Product Design, and Development",
         subTitle: "AI-Powered Scheduling & Booking Assistant",
         project_url: "https://bookingbee.ai/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Developed an AI-powered booking assistant that automates appointment scheduling across industries. Integrated calendar APIs, real-time availability detection, and GPT-powered chat for natural conversation flow. Built responsive UI and backend with robust timezone, cancellation, and rescheduling logic. Reduced manual booking tasks and improved user experience."
     },
     {
-        image: MY_PORTFOLIO_VENTURE_KIT_IMAGE,
-        path: MY_PORTFOLIO_VENTURE_KIT_IMAGE,
+        image: [MY_PORTFOLIO_VENTURE_KIT_IMAGE, MY_PORTFOLIO_VENTURE_KIT_IMAGE],
         title: "VentureKit.ai",
+        slug: "venture-kit-ai",
+        services: "Product Design, and Development",
         subTitle: "AI Startup Planning Assistant",
         project_url: "https://www.venturekit.ai/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Built an AI-powered platform that helps entrepreneurs generate business plans, pitch decks, and market analysis in minutes. Integrated GPT models for structured content creation and developed a clean, user-friendly interface. Enabled early-stage founders to validate and communicate ideas faster, reducing planning time by over 80%."
     },
     {
-        image: MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
-        path: MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
+        image: [MY_PORTFOLIO_WUNDER_FLATS_IMAGE, MY_PORTFOLIO_WUNDER_FLATS_IMAGE],
         title: "Wunderflats",
+        slug: "wunder-flats",
+        services: "Product Design, and Development",
         subTitle: "Furnished Apartment Rental Platform",
         project_url: "https://wunderflats.com/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Developed and optimized a scalable web platform for booking furnished apartments for mid- to long-term stays. Integrated search filters, availability calendars, secure messaging, and landlord dashboards. Enhanced user experience and conversion through dynamic UI, performance tuning, and location-based listings. Enabled seamless rental for expats, professionals, and students."
     },
     {
-        image: MY_PORTFOLIO_EDUAIDE_IMAGE,
-        path: MY_PORTFOLIO_EDUAIDE_IMAGE,
+        image: [MY_PORTFOLIO_EDUAIDE_IMAGE, MY_PORTFOLIO_EDUAIDE_IMAGE],
         title: "Eduaide.AI",
+        slug: "eduaide-ai",
+        services: "Product Design, and Development",
         subTitle: "AI-Powered Teaching Assistant Platform",
         project_url: "https://www.eduaide.ai/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Developed an AI-driven platform to assist educators in creating lesson plans, activities, and assessments. Integrated GPT-based models to generate educational content tailored to grade level, subject, and learning goals. Built intuitive UX with real-time generation and editing tools. Empowered thousands of teachers to save planning time and personalize learning."
     },
     {
-        image: MY_PORTFOLIO_AI_LAWYER_IMAGE,
-        path: MY_PORTFOLIO_AI_LAWYER_IMAGE,
+        image: [MY_PORTFOLIO_AI_LAWYER_IMAGE, MY_PORTFOLIO_AI_LAWYER_IMAGE],
         title: "AI Lawyer",
+        slug: "ai-lawyer",
+        services: "Product Design, and Development",
         subTitle: "Smart Legal Assistant Platform",
         project_url: "https://ailawyer.pro/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Built an AI-powered legal assistant that helps users generate, compare, and translate legal documents. Developed a multi-platform web and mobile app using GPT-based NLP models to automate legal workflows. My solution improved accessibility to legal services and reduced document processing time by over 70%."
     },
     {
-        image: MY_PORTFOLIO_AI_EARKICK_IMAGE,
-        path: MY_PORTFOLIO_AI_EARKICK_IMAGE,
+        image: [MY_PORTFOLIO_AI_EARKICK_IMAGE, MY_PORTFOLIO_AI_EARKICK_IMAGE],
         title: "Earkick",
+        slug: "earkick",
+        services: "Product Design, and Development",
         subTitle: "Real-Time AI Mental Health Tracker",
         project_url: "https://earkick.com/",
+        overview: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                WEB design encompass the process of creating and designing websites it invloves a combination of different skills and disciplines to produce a visually appealing and user friendly website. Here is the overview of key aspects of web design.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Research:</span>
+                &nbsp;Before starting the design, it's essential to understand the target audience, thier needs and the goals of the website.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Information Architecture: </span>
+                &nbsp;Organize and structure the content to ensure a logical flow for users.
+            </p>
+            <p className="mt-3 text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Wireframing and Prototyping: </span>
+                &nbsp;Create skeletal outlines and interactive prototypes to visualize the layout and functionality.
+            </p>
+        </>,
+        challenges: <>
+            <p className="text" style={{ fontSize: "14px" }}>
+                Web design comes with its own set of challenges, ranging from technical issues to user experience considerations. Here are some common chellenges faced by web designers. Web design encompasses the process of creating and designing websites it involves a combination of different skills and desciplines to produce a visually appealing and user-firendly website. Here's an overview of key aspects of web design.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Responsive Design:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Ensuring that a website looks and functions well on various devices and screen appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Use responsive design techniques, such as flexible grids and media queries.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Browser Compatibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Different browsers may interpret code differently, leading to inconsistencies int he website's appearence.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Test the webiste on multiple browsers ans use compatibility libraries or polyfills when necessary.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>User Experience (UX):</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+            <h4 className="text fw-bold mt-3 mb-2" style={{ fontSize: "16px" }}>Compliance and Accessibility:</h4>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Challenge:</span>
+                &nbsp;Creating a seamless and intuitive user experience that keeps visitors engaged.
+            </p>
+            <p className="text" style={{ fontSize: "14px" }}>
+                <span className="fw-bold">Solution:</span>
+                &nbsp;Condust user testing, design user-friendly interfaces, and prioritize accessibility to ensure a positive user experience.
+            </p>
+        </>,
         description: "Developed a privacy-first mental health tracking app powered by AI and voice analysis. Earkick enables users to log their mood and stress in real time through speech, offering immediate insights and coping strategies. Built and integrated emotion detection models, seamless UX, and cross-platform mobile support. Helped improve user engagement and self-awareness for early intervention."
     }
 ]

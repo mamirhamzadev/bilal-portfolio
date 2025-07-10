@@ -2,9 +2,11 @@ import Home from "../pages/Home"
 import Portfolio from "../pages/Portfolio"
 import FAQs from "../pages/FAQs"
 import Contact from "../pages/Contact"
+import PortfolioDetail from "../pages/PortfolioDetail"
 
 export const HOME_ROUTE = "/"
 export const PORTFOLIO_ROUTE = "/portfolio"
+export const PORTFOLIO_DETAIL_ROUTE = "/portfolio/:slug"
 export const FAQS_ROUTE = "/faqs"
 export const CONTACT_ROUTE = "/contact"
 
@@ -20,6 +22,7 @@ export default [
             <path d="M10.9753 10.1665C9.13359 11.2773 6.14859 11.2773 4.30859 10.1665" strokeWidth="1.4"
                 strokeLinecap="round" strokeLinejoin="round" />
         </svg>,
+        isHeaderRoute: true,
         element: Home
     },
     {
@@ -36,7 +39,15 @@ export default [
                 d="M4 15.7085V15.6668C4 14.7828 4.35119 13.9349 4.97631 13.3098C5.60143 12.6847 6.44928 12.3335 7.33333 12.3335H10.6667C11.5507 12.3335 12.3986 12.6847 13.0237 13.3098C13.6488 13.9349 14 14.7828 14 15.6668V15.7085"
                 strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>,
+        isHeaderRoute: true,
         element: Portfolio
+    },
+    {
+        title: "Portfolio Detail",
+        path: PORTFOLIO_DETAIL_ROUTE,
+        icon: null,
+        isHeaderRoute: false,
+        element: PortfolioDetail
     },
     {
         title: "Faqs",
@@ -49,6 +60,7 @@ export default [
             <path d="M1.33301 11.3335L7.99967 14.6668L14.6663 11.3335" strokeWidth="1.4"
                 strokeLinecap="round" strokeLinejoin="round" />
         </svg>,
+        isHeaderRoute: true,
         element: FAQs
     },
     {
@@ -63,6 +75,7 @@ export default [
                 d="M14 1.3335C14.663 1.3335 15.2989 1.59689 15.7678 2.06573C16.2366 2.53457 16.5 3.17045 16.5 3.8335V10.5002C16.5 11.1632 16.2366 11.7991 15.7678 12.2679C15.2989 12.7368 14.663 13.0002 14 13.0002H9.83333L5.66667 15.5002V13.0002H4C3.33696 13.0002 2.70107 12.7368 2.23223 12.2679C1.76339 11.7991 1.5 11.1632 1.5 10.5002V3.8335C1.5 3.17045 1.76339 2.53457 2.23223 2.06573C2.70107 1.59689 3.33696 1.3335 4 1.3335H14Z"
                 strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>,
+        isHeaderRoute: true,
         element: Contact
     }
 ]

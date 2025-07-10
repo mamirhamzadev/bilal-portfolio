@@ -2089,6 +2089,23 @@ p {
 	text-decoration: underline;
 }
 
+#portfolio-details .text {
+	color: var(--black);
+}
+
+.dark-theme #portfolio-details .text {
+	color: var(--dark-theme-light-white);
+}
+
+.dark-theme #portfolio-details h4.text,
+.dark-theme #portfolio-details .text span {
+	color: var(--dark-theme-white);
+}
+
+.dark-theme #portfolio-details .next-prev-btn-group a {
+	color: var(--dark-theme-white);
+}
+
 /*=============================
 	11. Theme Control CSS Start
 ===============================*/

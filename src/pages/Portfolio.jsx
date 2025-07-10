@@ -1,6 +1,8 @@
 import { faArrowRight, faPlus } from "@fortawesome/free-solid-svg-icons"
 import { PORTFOLIO_PROJECTS } from "../contants/siteData"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { PORTFOLIO_ROUTE } from "../contants/routes"
+import { Link } from "react-router-dom"
 
 function Portfolio() {
     return (
@@ -22,14 +24,14 @@ function Portfolio() {
                                             <div key={index} className="col-lg-6">
                                                 <div className="portfolio-item">
                                                     <div className="image">
-                                                        <img src={project.image} alt="project-1" className="img-fluid w-100" />
-                                                        <a href={project.path} className="gallery-popup full-image-preview parent-container">
+                                                        <img src={project.image[0]} alt="project-1" className="img-fluid w-100" />
+                                                        <Link to={project.slug} className="gallery-popup full-image-preview parent-container">
                                                             <FontAwesomeIcon icon={faPlus} />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <div className="text pb-0">
                                                         <div className="info">
-                                                            <a href={project.project_url} className="title">{project.title}</a>
+                                                            <Link to={PORTFOLIO_ROUTE + "/" + project.slug} className="title">{project.title}</Link>
                                                             <p className="subtitle">{project.subTitle}</p>
                                                         </div>
                                                         <div className="visite-btn">
@@ -53,7 +55,6 @@ function Portfolio() {
                 </div>
             </div>
         </section>
-
     )
 }
 

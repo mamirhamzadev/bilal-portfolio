@@ -31,7 +31,7 @@ function Header() {
                     <div className="menu-container">
                         <div className={`navbar-main d-flex flex-grow-1 ${isShowingNav ? "show" : ""}`}>
                             <ul className="navbar-info me-auto">
-                                {routes.map((route, index) => (
+                                {routes.filter((route) => route.isHeaderRoute).map((route, index) => (
                                     <li key={index} className="nav-item me-1">
                                         <Link onClick={() => setIsShowingNav(false)} className={`nav-link ${location.pathname === route.path ? "active" : ""}`} to={route.path}>
                                             {route.icon}

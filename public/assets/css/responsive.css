@@ -1,4 +1,4 @@
-@media (max-width:1399.98px) {
+@media (max-width: 1399.98px) {
   .common-button-groups .btn {
     padding: 16px 13px;
     font-size: 15px;
@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width:1199.98px) {
+@media (max-width: 1199.98px) {
   .navbar .navbar-main {
     position: fixed;
     top: 0;
@@ -300,7 +300,7 @@
   }
 }
 
-@media (max-width:991.98px) {
+@media (max-width: 991.98px) {
   .services-item {
     padding: 16px 13px 16px 13px;
   }
@@ -329,14 +329,45 @@
   .portfolio-details-area .prev-and-next-btn {
     column-gap: 16px;
   }
+
+  .dark-theme #portfolio-details .client-info {
+    width: 100% !important;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  }
+
+  #portfolio-details .client-info {
+    width: 100% !important;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d3d3d38b;
+  }
+
+  #portfolio-details .client-info div:first-child {
+    margin-bottom: 10px;
+  }
+
+  #portfolio-details .client-info div {
+    width: 100%;
+  }
+
+  #portfolio-details .client-info div p {
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+  #portfolio-details .client-info div h4 {
+    font-size: 18px !important;
+  }
 }
 
-@media (max-width:433.98px) {
+@media (max-width: 433.98px) {
   .btn.btn-call {
     width: 100%;
   }
 }
-@media (max-width:767.98px) {
+
+@media (max-width: 767.98px) {
   .content-box-card .working-with-area .working-with-main .items {
     width: 73px;
     height: 73px;
@@ -405,7 +436,7 @@
   }
 }
 
-@media (max-width:575.98px) {
+@media (max-width: 575.98px) {
   .common-button-groups .btn.btn-copy {
     margin-top: 8px;
   }
