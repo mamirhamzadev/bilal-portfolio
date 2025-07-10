@@ -286,6 +286,7 @@ export const PORTFOLIO_PROJECTS = [
       MY_PORTFOLIO_BLOODGPT_IMAGE,
       MY_PORTFOLIO_BLOODGPT_IMAGE,
       MY_PORTFOLIO_BLOODGPT_IMAGE,
+      MY_PORTFOLIO_BLOODGPT_IMAGE,
     ],
     title: "BloodGPT",
     slug: "blood-gpt",
@@ -387,6 +388,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     image: [
+      PROJECT_3_IMAGE,
       PROJECT_3_IMAGE,
       PROJECT_3_IMAGE,
       PROJECT_3_IMAGE,
@@ -500,6 +502,7 @@ export const PORTFOLIO_PROJECTS = [
       MY_PORTFOLIO_VENTURE_KIT_IMAGE,
       MY_PORTFOLIO_VENTURE_KIT_IMAGE,
       MY_PORTFOLIO_VENTURE_KIT_IMAGE,
+      MY_PORTFOLIO_VENTURE_KIT_IMAGE,
     ],
     title: "VentureKit.ai",
     slug: "venture-kit-ai",
@@ -601,6 +604,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     image: [
+      MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
       MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
       MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
       MY_PORTFOLIO_WUNDER_FLATS_IMAGE,
@@ -714,6 +718,7 @@ export const PORTFOLIO_PROJECTS = [
       MY_PORTFOLIO_EDUAIDE_IMAGE,
       MY_PORTFOLIO_EDUAIDE_IMAGE,
       MY_PORTFOLIO_EDUAIDE_IMAGE,
+      MY_PORTFOLIO_EDUAIDE_IMAGE,
     ],
     title: "Eduaide.AI",
     slug: "eduaide-ai",
@@ -821,6 +826,7 @@ export const PORTFOLIO_PROJECTS = [
       MY_PORTFOLIO_AI_LAWYER_IMAGE,
       MY_PORTFOLIO_AI_LAWYER_IMAGE,
       MY_PORTFOLIO_AI_LAWYER_IMAGE,
+      MY_PORTFOLIO_AI_LAWYER_IMAGE,
     ],
     title: "AI Lawyer",
     slug: "ai-lawyer",
@@ -922,6 +928,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     image: [
+      MY_PORTFOLIO_AI_EARKICK_IMAGE,
       MY_PORTFOLIO_AI_EARKICK_IMAGE,
       MY_PORTFOLIO_AI_EARKICK_IMAGE,
       MY_PORTFOLIO_AI_EARKICK_IMAGE,
