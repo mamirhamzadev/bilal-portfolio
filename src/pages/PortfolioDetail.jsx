@@ -41,7 +41,25 @@ function PortfolioDetail() {
           <div className="col-xl-12">
             <div className="card content-box-card">
               <div className="card-body portfolio-card">
-                <img src={project?.image[0]} alt="" className="w-100" />
+                <div className="media-showcase">
+                  {(project?.image || []).slice(0, 6).map((img, index) => (
+                    <div key={index} style={{ gridArea: `area${index + 1}` }}>
+                      <img src={img} alt="" className="w-100 rounded" />
+                    </div>
+                  ))}
+                  {/* <div className="col-lg-4 d-flex flex-row flex-lg-column gap-2">
+                    {(project?.image || []).slice(1, 4).map((img, index) => (
+                      <div>
+                        <img
+                          key={index}
+                          src={img}
+                          alt=""
+                          className="w-100 rounded"
+                        />
+                      </div>
+                    ))}
+                  </div> */}
+                </div>
                 <div className="mt-3 row">
                   <div className="col-lg-3 client-info">
                     <div>
@@ -72,14 +90,15 @@ function PortfolioDetail() {
                   </div>
                 </div>
                 <div className="row g-3 mt-4">
-                  {(project?.image || []).map((image, index) => (
-                    <img
-                      key={index}
-                      src={image}
-                      alt="project image"
-                      className="col-lg-6 img-fluid"
-                      style={{ aspectRatio: "4/3", objectFit: "cover" }}
-                    />
+                  {(project?.image || []).slice(6).map((image, index) => (
+                    <div className="col-lg-6">
+                      <img
+                        key={index}
+                        src={image}
+                        alt="project image"
+                        className="rounded w-100"
+                      />
+                    </div>
                   ))}
                 </div>
                 <div>
