@@ -2144,13 +2144,14 @@ p {
 
 #portfolio-details .media-showcase {
   display: grid;
-  grid-template-areas: "area4 area5 area6" "area3 area1 area1" "area2 area1 area1";
+  grid-template-areas: "area6 area4 area5" "area3 area1 area1" "area2 area1 area1";
   gap: 1rem;
 }
 
 #portfolio-details .text {
   color: var(--black);
 }
+
 
 .dark-theme #portfolio-details .text {
   color: var(--dark-theme-light-white);

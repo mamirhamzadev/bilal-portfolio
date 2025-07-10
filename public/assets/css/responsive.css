@@ -334,9 +334,6 @@
     grid-template-areas: "area1 area1" "area2 area3" "area4 area5";
     gap: 10px;
   }
-  #portfolio-details .media-showcase > div:last-child {
-    display: none;
-  }
 
   .dark-theme #portfolio-details .client-info {
     width: 100% !important;

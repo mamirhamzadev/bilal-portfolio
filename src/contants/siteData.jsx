@@ -179,7 +179,6 @@ export const PORTFOLIO_PROJECTS = [
       MY_PORTFOLIO_IMAGE,
       MY_PORTFOLIO_IMAGE,
       MY_PORTFOLIO_IMAGE,
-      MY_PORTFOLIO_IMAGE,
     ],
     title: "HiPeople",
     slug: "hi-people",

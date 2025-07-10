@@ -42,23 +42,32 @@ function PortfolioDetail() {
             <div className="card content-box-card">
               <div className="card-body portfolio-card">
                 <div className="media-showcase">
-                  {(project?.image || []).slice(0, 6).map((img, index) => (
+                  {(project?.image || []).slice(0, 5).map((img, index) => (
                     <div key={index} style={{ gridArea: `area${index + 1}` }}>
-                      <img src={img} alt="" className="w-100 rounded" />
+                      <img src={img} alt="" className="w-100 h-100 rounded" />
                     </div>
                   ))}
-                  {/* <div className="col-lg-4 d-flex flex-row flex-lg-column gap-2">
-                    {(project?.image || []).slice(1, 4).map((img, index) => (
-                      <div>
-                        <img
-                          key={index}
-                          src={img}
-                          alt=""
-                          className="w-100 rounded"
-                        />
-                      </div>
-                    ))}
-                  </div> */}
+                  <div
+                    style={{ gridArea: "area6" }}
+                    className="client-info d-none d-lg-flex flex-column h-100"
+                  >
+                    <h4 className="text fw-bold fs-5">{project?.title}</h4>
+                    <Link
+                      className="mt-2 h-100"
+                      to={project?.project_url}
+                      target="_blank"
+                    >
+                      {project?.title}
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="ms-1"
+                        fontSize={12}
+                        style={{ rotate: "-45deg" }}
+                      />
+                    </Link>
+                    <p className="text mt-3">Services:</p>
+                    <h4 className="text fw-bold fs-5">{project?.services}</h4>
+                  </div>
                 </div>
                 <div className="mt-3 row">
                   <div className="col-lg-3 client-info">
@@ -90,7 +99,7 @@ function PortfolioDetail() {
                   </div>
                 </div>
                 <div className="row g-3 mt-4">
-                  {(project?.image || []).slice(6).map((image, index) => (
+                  {(project?.image || []).slice(5).map((image, index) => (
                     <div className="col-lg-6">
                       <img
                         key={index}
